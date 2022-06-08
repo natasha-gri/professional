@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+.footer {
+    background: url(/img/diamonds-left.png), url(/img/diamonds-right.png), url(/img/footer-mobile.png);
+    background-position: 0% 107%, 100% 67%, 50% -34%;
+    background-repeat: no-repeat;
+    background-size: 21%, 32%, 100%;
+    &__blocks {
+        &_rights {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          & img {
+            width: 42%;
+          }
+          & p {
+            width: 45%;
+            padding-top: 15px;
+          }
+        }
+        &_contacts {
+          &_adress {
+              &_row {
+                  & div {
+                  &:nth-child(1){
+                    width: 30%;
+                      padding-right: 0;
+                      text-align: left;
+                  }
+                  &:nth-child(2){
+                  }
+              }
+              }
+          }
+          &_time {
+              width: 45%;
+          }
+      }
+      }
+}
+
+}
+/* end */

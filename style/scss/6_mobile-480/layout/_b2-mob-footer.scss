@@ -1,0 +1,52 @@
+@media (max-width: 480px) {
+.footer {
+  background-position: 0% 104%, 100% 66%, 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 30%, 45%, 150%;
+  height: 1127px;
+    &-wrap {
+      width: 94%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+    }
+    &__blocks {
+      &_rights {
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 160px;
+        & img {
+          width: 58%;
+          margin-bottom: 16px;
+        }
+        & p {
+          width: 100%;
+          padding-top: 0;
+        }
+      }
+      &_contacts {
+        flex-direction: column;
+        &_adress {
+          width: 100%;
+          margin-bottom: 20px;
+          &_row {
+            & div {
+              &:nth-child(1){
+                  width: 30%;
+                  padding-right: 10px;
+                  text-align: left;
+              }
+              &:nth-child(2){
+                  width: 80%;
+              }
+          }
+          }
+        }
+        &_time {
+          width: 100%;
+      }
+      }
+    }
+}
+  /* end */
+  }

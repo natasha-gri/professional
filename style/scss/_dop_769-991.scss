@@ -1,0 +1,29 @@
+// Эти медиазапросы нужны, п.ч. неправильно отрабатывают бутстраповские col-md
+@media (min-width: 769px) and (max-width: 991px) {
+    .header {
+        background-position: -8% 50%, 842% 100%;
+        background-size: 0%, 95%;
+    }
+    .top-menu {
+        display: none;
+    }
+    .cover {
+        min-height: 70vh;
+    }
+    .footer {
+      &__blocks {
+        &_rights {
+          flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            & img {
+                width: 37%;
+              }
+              & p {
+                width: 45%;
+                padding-top: 8px;
+              }
+        }
+      }
+    }
+  }

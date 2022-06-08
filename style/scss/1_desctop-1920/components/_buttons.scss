@@ -1,0 +1,18 @@
+.btn-cover {
+    @extend .second-font;
+    font-size: 1.6em; //26
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    background-color: $btn;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 48px 15px 48px;
+    &:hover {
+        background-color: lighten( $btn, 5%);
+    }
+    &:active {
+        background-color: darken( $btn, 3%);
+    }
+}

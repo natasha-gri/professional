@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .top-menu {
+        display: none;
+    }
+    // если меню переполняется
+    .menu--center{
+        overflow: scroll;
+        max-height: 84vh;
+    }
+    .padding--none{
+       // padding-bottom: 30px;
+    }
+    // start - Переопределение стилей меню бутстрапа
+    .navbar-expand-lg .navbar-nav {
+        margin-right: 0;
+    }
+    .nav-link {
+        text-align: center;
+    }
+    // end - Переопределение стилей меню бутстрапа
+/* end */
+}
+

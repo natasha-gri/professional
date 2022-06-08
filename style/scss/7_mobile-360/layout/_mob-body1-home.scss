@@ -1,0 +1,21 @@
+@media (max-width: 360px) {
+  .cover {
+    min-height: 100vh;
+    &__content {
+      margin-top: -8%;
+    }
+  }
+  .programs {
+    &__blocks {
+      &_card {
+        padding: 5px 24px 20px 24px;
+        background-position: 0% 94%, 100% 0%;
+        background-size: 91%, 50vh;
+      }
+    }
+  }
+  .process {
+    background-size: 67%;
+  }
+  /* end */
+}

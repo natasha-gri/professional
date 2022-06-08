@@ -1,0 +1,43 @@
+@media (max-width : 768px) {
+    .nav-link {
+        position: relative;        
+        font-size: 1.2em; //19.2px
+        &::after {
+            content: '';
+            //content: none;
+            position: absolute;
+            display: block;
+            width: 20%;
+            height: 2px;
+            bottom: 0;
+            left: 40%;
+            background: $link-hover;
+            transform: translateY(2px) scale(0);
+            transition: all 0.1s;
+        }
+        &:hover{
+            color: $link-hover; 
+            &::after{
+                transform: translateY(2px) scale(1);
+            }
+        }
+        &:focus{
+            color: $link-hover; 
+            &::after{
+                transform: translateY(2px) scale(0);
+            }
+        }
+    }
+    .dropdown-menu {
+       background-color: lighten( $bg-green, 20%); 
+       box-shadow: $box-shadow-menu;
+    }
+    .dropdown-item {
+        text-align: center;
+        text-transform: lowercase;
+        padding-top: 0.6em;
+        padding-bottom: 0.8em;
+        white-space: normal;
+    }
+/* end */
+}

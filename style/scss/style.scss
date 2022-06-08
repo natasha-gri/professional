@@ -1,0 +1,58 @@
+/* 1_desctop-от 1600 до 1920 */
+@import '1_desctop-1920/base/reset';
+@import '1_desctop-1920/helpers/variables';
+@import '1_desctop-1920/base/fontello';
+@import '1_desctop-1920/base/fonts';
+@import '1_desctop-1920/base/typography';
+@import '1_desctop-1920/layout/b1-header'; 
+@import '1_desctop-1920/layout/body1-home';
+@import '1_desctop-1920/layout/body1-page'; 
+@import '1_desctop-1920/layout/b2-footer'; 
+@import '1_desctop-1920/components/buttons';
+@import '1_desctop-1920/components/icons';
+
+/* 2_desctop-от 1280 до 1600 */
+@import '2_desctop-1600/base/desc-typography';
+@import '2_desctop-1600/layout/b1-desc-header'; 
+@import '2_desctop-1600/layout/desc-body1-home';
+@import '2_desctop-1600/layout/desc-body1-page'; 
+@import '2_desctop-1600/layout/b2-desc-footer'; 
+
+/* 3_desctop-от 1024 до 1280 */
+@import '3_desctop-1280/base/desc-typography';
+@import '3_desctop-1280/layout/b1-desc-header'; 
+@import '3_desctop-1280/layout/desc-body1-home'; 
+@import '3_desctop-1280/layout/desc-body1-page'; 
+@import '3_desctop-1280/layout/b2-desc-footer';
+
+/* 4_tablet-от 768 до 1024 */
+@import '4_tablet-1024/base/tab-typography';
+@import '4_tablet-1024/layout/b1-tab-header'; 
+@import '4_tablet-1024/layout/tab-body1-home'; 
+@import '4_tablet-1024/layout/tab-body1-page'; 
+@import '4_tablet-1024/layout/b2-tab-footer'; 
+
+/* 5_tablet-от 480 до 768*/
+@import '5_tablet-768/base/tab-typography';
+@import '5_tablet-768/layout/b1-tab-header'; 
+@import '5_tablet-768/layout/tab-body1-home'; 
+@import '5_tablet-768/layout/tab-body1-page'; 
+@import '5_tablet-768/layout/b2-tab-footer'; 
+@import '5_tablet-768/components/tab-buttons';
+
+/* 6_mob-от 360 до 480*/
+@import '6_mobile-480/base/mob-typography';
+@import '6_mobile-480/layout/b1-mob-header'; 
+@import '6_mobile-480/layout/mob-body1-home';
+@import '6_mobile-480/layout/mob-body1-page';
+@import '6_mobile-480/layout/b2-mob-footer'; 
+
+/* 7_mob-до 360*/
+@import '7_mobile-360/base/mob-typography';
+@import '7_mobile-360/layout/b1-mob-header'; 
+@import '7_mobile-360/layout/mob-body1-home';
+@import '7_mobile-360/layout/mob-body1-page';
+@import '7_mobile-360/layout/b2-mob-footer'; 
+
+/* 969-991*/
+@import 'dop_769-991';

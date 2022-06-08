@@ -1,0 +1,14 @@
+@media (max-width: 360px) {
+    .text-cover1 {
+        margin-bottom: 52px; 
+    }
+    .text-cover2{
+        font-size: 1.1em; //21px
+        & span {
+            font-size: 1.4em;
+            margin-left: 0;
+        }
+    }
+
+/* end */
+}

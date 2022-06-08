@@ -1,0 +1,56 @@
+.main-page-footer {
+    background: linear-gradient(1deg, #89a98f 0%, #99BFA1 44.79%, #99BFA1 100%);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $bg-green;
+    background: url('/img/diamonds-left.png'),url('/img/diamonds-right.png'),
+    url('/img/footer-left.png'),url('/img/footer-right.png')    ;
+    background-position: 10% 106%, 87% 67%, -15% 104%, 107% 100%;
+    background-repeat: no-repeat;
+    background-size: 9%, 15%, 45%, 60%;
+    &-wrap {
+        margin-bottom: 56px;
+        padding: 17px 10px 3px 24px;
+        background: rgba(255, 255, 255, 0.44);
+        backdrop-filter: blur(11px);
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        &_rights {
+            display: flex;
+            flex-direction: column;
+            & img {
+                width: 70%;
+            }
+        }
+        &_contacts {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            &_adress {
+                width: 50%;
+                &_row {
+                    display: flex;
+                    & div {
+                        &:nth-child(1){
+                            width: 38%;
+                            padding-right: 20px;
+                            text-align: right;
+                        }
+                        &:nth-child(2){
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+            &_time {
+                width: 40%;
+            }
+        }
+    }    
+}

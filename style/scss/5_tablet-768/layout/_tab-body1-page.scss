@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+    .body-page {
+        background: url(/img/footer-page-img-768.png);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .header {
+        background-position: -8% 50%, -490% 100%;
+        background-size: 0%, 108%;
+    }
+    .page {
+        padding-top: 180px;
+    }
+    .cover {
+        min-height: 66vh;
+        padding-top: 100px;
+    }
+    .programs {
+        &-header {
+            width: 55%;
+        }
+        &__blocks {
+            &_card {
+                min-height: 175px;
+                padding: 5px 12px 18px 12px;
+                background-position: 34% 164%, 100% 0%;
+                background-size: 144%, 45vh;
+            }
+        }
+    }
+    .process {
+        background-size: 36%;
+        &__blocks {
+            &_item {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .benefits {
+        &-header {
+            width: 52%; 
+        }
+        &__blocks {
+            &_item {
+                margin-bottom: 95px;
+                & div {
+                    &:nth-child(1) {
+                    min-height: 193px;                
+                    }
+                }
+                
+            }
+        }
+    }
+
+/* end */
+}
