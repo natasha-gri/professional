@@ -1,8 +1,16 @@
 @media (max-width : 1280px) {
 .footer {    
-    background-position: -2% 106%, 100% 67%, -42% 100%, 340% 100%;
+    background-position: -42% 100%, 340% 100%;
     background-repeat: no-repeat;
-    background-size: 11%, 18%, 57%, 90%;
+    background-size: 57%, 90%;
+    &-wrap {
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
+        }
+    }
 }
 /* end */
 }

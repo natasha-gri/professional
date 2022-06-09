@@ -54,6 +54,16 @@
             }
         }
     }
+    .footer {
+        &-wrap {
+            &:before {
+                display: none;
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
 
 /* end */
 }

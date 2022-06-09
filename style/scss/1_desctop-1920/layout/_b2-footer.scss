@@ -15,6 +15,9 @@
         position: relative;
         z-index: 1;
         margin-bottom: 56px;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
         &-bg{
             position: absolute;
             width: 100%;
@@ -27,21 +30,24 @@
             position: absolute;
             content: url('/img/diamonds-left.png');
             top: 2px;
-            left: -67px;
+            left: -60px;
             z-index: -10;
         }
         &:after {
             position: absolute;
             content: url('/img/diamonds-right.png');
             bottom: 2px;
-            right: -68px;
+            right: -60px;
             z-index: -10;
         }
     }
     &__blocks {
         display: flex;
         justify-content: space-between;
-        padding: 17px 10px 3px 24px;
+        width: 100%;
+        margin: 0;
+        padding: 17px 0 3px 5px;
+        box-sizing: border-box;
         &_rights {
             display: flex;
             flex-direction: column;

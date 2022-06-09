@@ -54,6 +54,9 @@ h2 {
     color: $text-main;
     margin-bottom: 15px;
 }
+.benefits__blocks_item div p {
+    margin-bottom: 0;
+}
 .text-grey {
     color: $text-grey;
 }
@@ -177,8 +180,8 @@ a {
 .dropdown-item {
     text-transform: lowercase;
     color: $text-main;
-    padding-top: 0.6em;
-    padding-bottom: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.6em;
 }
 // end переопределение стилей ссылок меню
 

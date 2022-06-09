@@ -1,13 +1,20 @@
 @media (max-width: 480px) {
 .footer {
-  background-position: 0% 104%, 100% 66%, 50% 100%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
-  background-size: 30%, 45%, 150%;
+  background-size: 150%;
     &-wrap {
       width: 94%;
       margin-left: auto;
       margin-right: auto;
-      padding: 20px;
+      &:before {
+        top: 354px;
+        left: 11px;
+      }
+      &:after {
+        bottom: 376px;
+        right: 10px;
+      }
     }
     &__blocks {
       &_rights {
