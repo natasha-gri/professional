@@ -56,9 +56,7 @@
     padding: 0.10rem 0.25rem;
     &:focus {
         text-decoration: none;
-        color: #818181;
-        background-color: #ffffff36;
-        box-shadow: 0 0 4px 0.1rem;
+        box-shadow: none;
     }
     & span {
         font-size: 35px;

@@ -23,8 +23,8 @@
         }
         &__blocks {
             &_card {
-                min-height: 175px;
-                padding: 5px 12px 18px 12px;
+                min-height: 188px;
+                padding: 5px 12px 6px 12px;
                 background-position: 34% 164%, 100% 0%;
                 background-size: 144%, 45vh;
             }
@@ -51,6 +51,16 @@
                     }
                 }
                 
+            }
+        }
+    }
+    .footer {
+        &-wrap {
+            &:before {
+                display: none;
+            }
+            &:after {
+                display: none;
             }
         }
     }

@@ -263,6 +263,9 @@ h2 {
   color: #1D1D1D;
   margin-bottom: 15px; }
 
+.benefits__blocks_item div p {
+  margin-bottom: 0; }
+
 .text-grey {
   color: #636363; }
 
@@ -312,6 +315,8 @@ a {
   letter-spacing: 0.025em;
   text-transform: lowercase;
   color: #3C7D4A; }
+  a:hover {
+    color: #2b5b36; }
 
 .top-menu-link {
   display: block;
@@ -322,6 +327,8 @@ a {
   line-height: 14px;
   text-align: right;
   color: #494949; }
+  .top-menu-link:hover {
+    color: #161616; }
 
 .nav-link {
   font-size: 1em;
@@ -352,8 +359,8 @@ a {
 .dropdown-item {
   text-transform: lowercase;
   color: #1D1D1D;
-  padding-top: 0.6em;
-  padding-bottom: 0.8em; }
+  padding-top: 0.5em;
+  padding-bottom: 0.6em; }
 
 .programs__blocks_card p:nth-child(1) {
   display: block;
@@ -452,9 +459,7 @@ a {
   padding: 0.10rem 0.25rem; }
   .navbar-toggler:focus {
     text-decoration: none;
-    color: #818181;
-    background-color: #ffffff36;
-    box-shadow: 0 0 4px 0.1rem; }
+    box-shadow: none; }
   .navbar-toggler span {
     font-size: 35px;
     line-height: 150%;
@@ -705,6 +710,11 @@ header {
   border-right: 1px solid black;
   transform: rotate(225deg); }
 
+.footer-wrap:before {
+  display: none; }
+.footer-wrap:after {
+  display: none; }
+
 .footer-page {
   display: flex;
   align-items: flex-end; }
@@ -717,18 +727,43 @@ header {
   flex-direction: column;
   justify-content: space-between;
   background-color: #99BFA1;
-  background: url("/img/diamonds-left.png"), url("/img/diamonds-right.png"), url("/img/footer-left.png"), url("/img/footer-right.png");
-  background-position: 10% 106%, 87% 67%, -15% 104%, 107% 100%;
+  background: url("/img/footer-left.png"), url("/img/footer-right.png");
+  background-position: -15% 104%, 107% 100%;
   background-repeat: no-repeat;
-  background-size: 9%, 15%, 45%, 60%; }
+  background-size: 45%, 60%; }
   .footer-wrap {
+    position: relative;
+    z-index: 1;
     margin-bottom: 56px;
-    padding: 17px 10px 3px 24px;
-    background: rgba(255, 255, 255, 0.44);
-    backdrop-filter: blur(11px); }
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box; }
+    .footer-wrap-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(255, 255, 255, 0.44);
+      backdrop-filter: blur(11px); }
+    .footer-wrap:before {
+      position: absolute;
+      content: url("/img/diamonds-left.png");
+      top: 2px;
+      left: -60px;
+      z-index: -10; }
+    .footer-wrap:after {
+      position: absolute;
+      content: url("/img/diamonds-right.png");
+      bottom: 2px;
+      right: -60px;
+      z-index: -10; }
   .footer__blocks {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 17px 0 3px 5px;
+    box-sizing: border-box; }
     .footer__blocks_rights {
       display: flex;
       flex-direction: column; }
@@ -781,9 +816,9 @@ header {
     background-size: 120%; } }
 @media (max-width: 1600px) {
   .footer {
-    background-position: 2% 106%, 99% 67%, -15% 104%, 107% 100%;
+    background-position: -15% 104%, 107% 100%;
     background-repeat: no-repeat;
-    background-size: 10%, 17%, 45%, 60%; }
+    background-size: 45%, 60%; }
 
   /* end */ }
 /* 3_desctop-от 1024 до 1280 */
@@ -809,9 +844,13 @@ header {
     background-size: 150%; } }
 @media (max-width: 1280px) {
   .footer {
-    background-position: -2% 106%, 100% 67%, -42% 100%, 340% 100%;
+    background-position: -42% 100%, 340% 100%;
     background-repeat: no-repeat;
-    background-size: 11%, 18%, 57%, 90%; }
+    background-size: 57%, 90%; }
+    .footer-wrap:before {
+      left: 0; }
+    .footer-wrap:after {
+      right: 0; }
 
   /* end */ }
 /* 4_tablet-от 768 до 1024 */
@@ -847,9 +886,9 @@ header {
   /* end */ }
 @media (max-width: 1024px) {
   .footer {
-    background-position: -4% 109%, 106% 72%, -190% 100%, -299% 100%;
+    background-position: -190% 100%, -299% 100%;
     background-repeat: no-repeat;
-    background-size: 14%, 23%, 78%, 107%; }
+    background-size: 78%, 107%; }
     .footer__blocks_rights {
       min-height: 100px; }
       .footer__blocks_rights img {
@@ -892,7 +931,8 @@ header {
     text-transform: lowercase;
     padding-top: 0.6em;
     padding-bottom: 0.8em;
-    white-space: normal; }
+    white-space: normal;
+    line-height: 110%; }
 
   /* end */ }
 @media (max-width: 768px) {
@@ -902,6 +942,8 @@ header {
   .menu--center {
     overflow: scroll;
     max-height: 84vh; }
+    .menu--center form {
+      margin-bottom: 30px; }
 
   .navbar-expand-lg .navbar-nav {
     margin-right: 0; }
@@ -961,8 +1003,8 @@ header {
   .programs-header {
     width: 55%; }
   .programs__blocks_card {
-    min-height: 175px;
-    padding: 5px 12px 18px 12px;
+    min-height: 188px;
+    padding: 5px 12px 6px 12px;
     background-position: 34% 164%, 100% 0%;
     background-size: 144%, 45vh; }
 
@@ -978,28 +1020,49 @@ header {
     .benefits__blocks_item div:nth-child(1) {
       min-height: 193px; }
 
+  .footer-wrap:before {
+    display: none; }
+  .footer-wrap:after {
+    display: none; }
+
   /* end */ }
 @media (max-width: 768px) {
   .footer {
-    background: url(/img/diamonds-left.png), url(/img/diamonds-right.png), url(/img/footer-mobile.png);
-    background-position: 0% 107%, 100% 67%, 50% -34%;
+    background: url(/img/footer-mobile.png);
+    background-position: 50% -34%;
     background-repeat: no-repeat;
-    background-size: 21%, 32%, 100%; }
-    .footer__blocks_rights {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .footer__blocks_rights img {
-        width: 42%; }
-      .footer__blocks_rights p {
-        width: 45%;
-        padding-top: 15px; }
-    .footer__blocks_contacts_adress_row div:nth-child(1) {
-      width: 30%;
-      padding-right: 0;
-      text-align: left; }
-    .footer__blocks_contacts_time {
-      width: 45%; } }
+    background-size: 100%; }
+    .footer-wrap:before {
+      content: url("/img/diamonds-left-mob.png");
+      top: 161px;
+      left: -17px; }
+    .footer-wrap:after {
+      content: url("/img/diamonds-right-mob.png");
+      bottom: 179px;
+      right: 10px; }
+    .footer__blocks {
+      padding: 17px 0 3px 15px; }
+      .footer__blocks_rights {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box; }
+        .footer__blocks_rights img {
+          width: 42%; }
+        .footer__blocks_rights p {
+          width: 45%;
+          padding-top: 15px; }
+      .footer__blocks_contacts {
+        padding-left: 0;
+        padding-right: 0; }
+        .footer__blocks_contacts_adress_row div:nth-child(1) {
+          width: 30%;
+          padding-right: 0;
+          text-align: left; }
+        .footer__blocks_contacts_time {
+          width: 45%; } }
 /* end */
 @media (max-width: 768px) {
   .btn-cover {
@@ -1028,18 +1091,12 @@ header {
   .cover {
     margin-bottom: 0; }
 
-  .programs {
-    padding-top: 45px; }
-    .programs-header {
-      display: none; }
-    .programs h2 {
-      margin-top: 0; }
-    .programs__blocks_card {
-      min-height: 147px;
-      margin-bottom: 11px;
-      padding: 5px 24px 20px 24px;
-      background-position: 0% 98%, 100% 0%;
-      background-size: 78%, 37vh; }
+  .programs__blocks_card {
+    min-height: 1px;
+    margin-bottom: 11px;
+    padding: 5px 24px 10px 24px;
+    background-position: 0% 98%, 100% 0%;
+    background-size: 78%, 37vh; }
 
   .process {
     background-size: 55%; }
@@ -1087,12 +1144,6 @@ header {
       display: none; }
     .programs h2 {
       margin-top: 0; }
-    .programs__blocks_card {
-      min-height: 147px;
-      margin-bottom: 11px;
-      padding: 5px 24px 20px 24px;
-      background-position: 0% 98%, 100% 0%;
-      background-size: 78%, 37vh; }
 
   .process {
     background-size: 55%; }
@@ -1118,15 +1169,19 @@ header {
   /* end */ }
 @media (max-width: 480px) {
   .footer {
-    background-position: 0% 104%, 100% 66%, 50% 100%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-size: 30%, 45%, 150%;
-    height: 1127px; }
+    background-size: 150%; }
     .footer-wrap {
       width: 94%;
       margin-left: auto;
-      margin-right: auto;
-      padding: 20px; }
+      margin-right: auto; }
+      .footer-wrap:before {
+        top: 354px;
+        left: 11px; }
+      .footer-wrap:after {
+        bottom: 376px;
+        right: 10px; }
     .footer__blocks_rights {
       flex-direction: column;
       justify-content: flex-start;
@@ -1173,7 +1228,7 @@ header {
       margin-top: -8%; }
 
   .programs__blocks_card {
-    padding: 5px 24px 20px 24px;
+    padding: 5px 24px 5px 24px;
     background-position: 0% 94%, 100% 0%;
     background-size: 91%, 50vh; }
 
@@ -1183,31 +1238,14 @@ header {
   /* end */ }
 @media (max-width: 360px) {
   .body-page {
-    background-size: 134%; }
-
-  .page {
-    padding-top: 135px; }
-
-  .cover {
-    min-height: 100vh; }
-    .cover__content {
-      margin-top: -8%; }
-
-  .programs__blocks_card {
-    padding: 5px 24px 20px 24px;
-    background-position: 0% 94%, 100% 0%;
-    background-size: 91%, 50vh; }
-
-  .process {
-    background-size: 67%; }
+    background-size: 126%; }
 
   /* end */ }
 @media (max-width: 360px) {
   .footer {
-    background-position: 0% 102%, 100% 68%, 50% 100%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-size: 26%, 43%, 208%;
-    height: 1240px; }
+    background-size: 208%; }
 
   /* end */ }
 /* 969-991*/

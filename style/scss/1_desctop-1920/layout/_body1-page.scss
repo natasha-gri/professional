@@ -97,15 +97,17 @@ header {
 }
 // end переопределение стилей бутстрапа для аккрдеона левого
 
-footer {
-    //background-color: #fff;
+.footer {
+    &-wrap {
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+    }
 }
 .footer-page {
     display: flex;
     align-items: flex-end;
-    // margin-top: -275px;
-    // background: url(/img/footer-page-img-1920.png);
-    // background-position: 50% 100%;
-    // background-repeat: no-repeat;
-    // background-size: 100%;
 }

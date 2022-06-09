@@ -1,9 +1,8 @@
 @media (max-width: 1024px) {
 .footer {    
-    background-position: -4% 109%, 106% 72%, -190% 100%, -299% 100%;
+    background-position: -190% 100%, -299% 100%;
     background-repeat: no-repeat;
-    background-size: 14%, 23%, 78%, 107%;
-
+    background-size: 78%, 107%;
     &__blocks {
         &_rights {
             min-height: 100px;
