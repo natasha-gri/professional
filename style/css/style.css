@@ -710,6 +710,11 @@ header {
   border-right: 1px solid black;
   transform: rotate(225deg); }
 
+.footer-wrap:before {
+  display: none; }
+.footer-wrap:after {
+  display: none; }
+
 .footer-page {
   display: flex;
   align-items: flex-end; }
