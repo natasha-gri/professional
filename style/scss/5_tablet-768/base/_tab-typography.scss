@@ -11,18 +11,18 @@
             height: 2px;
             bottom: 0;
             left: 40%;
-            background: $link-hover;
+            background: $link-menu-hover;
             transform: translateY(2px) scale(0);
             transition: all 0.1s;
         }
         &:hover{
-            color: $link-hover; 
+            color: $link-menu-hover; 
             &::after{
                 transform: translateY(2px) scale(1);
             }
         }
         &:focus{
-            color: $link-hover; 
+            color: $link-menu-hover; 
             &::after{
                 transform: translateY(2px) scale(0);
             }
@@ -38,6 +38,7 @@
         padding-top: 0.6em;
         padding-bottom: 0.8em;
         white-space: normal;
+        line-height: 110%;
     }
 /* end */
 }

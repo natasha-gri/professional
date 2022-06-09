@@ -7,20 +7,41 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: $bg-green;
-    background: url('/img/diamonds-left.png'),url('/img/diamonds-right.png'),
-    url('/img/footer-left.png'),url('/img/footer-right.png')    ;
-    background-position: 10% 106%, 87% 67%, -15% 104%, 107% 100%;
+    background: url('/img/footer-left.png'),url('/img/footer-right.png');
+    background-position: -15% 104%, 107% 100%;
     background-repeat: no-repeat;
-    background-size: 9%, 15%, 45%, 60%;
+    background-size: 45%, 60%;
     &-wrap {
+        position: relative;
+        z-index: 1;
         margin-bottom: 56px;
-        padding: 17px 10px 3px 24px;
-        background: rgba(255, 255, 255, 0.44);
-        backdrop-filter: blur(11px);
+        &-bg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgba(255, 255, 255, 0.44);
+            backdrop-filter: blur(11px);
+        }
+        &:before {
+            position: absolute;
+            content: url('/img/diamonds-left.png');
+            top: 2px;
+            left: -67px;
+            z-index: -10;
+        }
+        &:after {
+            position: absolute;
+            content: url('/img/diamonds-right.png');
+            bottom: 2px;
+            right: -68px;
+            z-index: -10;
+        }
     }
     &__blocks {
         display: flex;
         justify-content: space-between;
+        padding: 17px 10px 3px 24px;
         &_rights {
             display: flex;
             flex-direction: column;

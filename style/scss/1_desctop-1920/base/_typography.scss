@@ -111,6 +111,9 @@ a {
     letter-spacing: 0.025em;
     text-transform: lowercase;
     color: $links;
+    &:hover {
+        color: darken($links, 10%);
+    }
 }
 .top-menu-link {
     display: block;
@@ -121,7 +124,10 @@ a {
     font-size: 12px;
     line-height: 14px;
     text-align: right;
-    color: #494949;
+    color: $top-menu-link;
+    &:hover {
+        color: darken($top-menu-link, 20%);
+    }
 }
 
 // start переопределение стилей ссылок меню
@@ -140,18 +146,18 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: $link-hover;
+        background: $link-menu-hover;
         transform: translateY(2px) scale(0);
         transition: all 0.1s;
     }
     &:hover{
-        color: $link-hover; 
+        color: $link-menu-hover; 
         &::after{
             transform: translateY(2px) scale(1);
         }
     }
     &:focus{
-        color: $link-hover; 
+        color: $link-menu-hover; 
         &::after{
             transform: translateY(2px) scale(0);
         }
