@@ -9,44 +9,44 @@ body {
 }
 
 .footer-page {
-  height: 217px;
-  margin-top: -217px;
+  height: 217.02px;
+  margin-top: -217.02px;
 }
 
 .clr {
-  //height: 217px;
+  height: 161.02px;
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
   .footer-page {
-    height: 316px;
-    margin-top: -316px;
+    height: 259.63px;
+    margin-top: -259.63px;
   }
 
   .clr {
-    height: 316px;
+    height: 259.63px;
   }
 }
 
 @media (max-width: 768px) {
   .footer-page {
-    height: 316px;
-    margin-top: -316px;
+    height: 259.98px;
+    margin-top: -259.98px;
   }
 
   .clr {
-    height: 316px;
+    height: 259.98px;
   }
 }
 
 @media (max-width: 480px) {
   .footer-page {
-    height: 512px;
-    margin-top: -512px;
+    height: 455.59px;
+    margin-top: -455.59px;
   }
 
   .clr {
-    height: 512px;
+    height: 455.59px;
   }
 }
 
