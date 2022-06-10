@@ -4,9 +4,11 @@
     background-repeat: no-repeat;
     background-size: 0%, 190%;
   }
+
   .cover {
     margin-bottom: 0;
   }
+
   .programs {
     &__blocks {
       &_card {
@@ -18,36 +20,44 @@
       }
     }
   }
+
   .process {
     background-size: 55%;
+
     &__blocks {
       padding-bottom: 62px;
     }
   }
+
   .benefits {
     margin-top: 0;
     padding-top: 45px;
+
     &-header {
       display: none;
     }
+
     & h2 {
       margin-top: 0;
     }
+
     &__blocks {
       &_item {
         margin-bottom: 0;
-          & div {
+
+        & div {
+          margin-bottom: 25px;
+
+          &:nth-child(1) {
+            min-height: 0;
+          }
+
+          &:nth-child(2) {
             margin-bottom: 25px;
-            &:nth-child(1) {
-              min-height: 0;
-            }
-            &:nth-child(2) {
-              margin-bottom: 25px;
           }
-          }
-          
+        }
+
       }
+    }
   }
-  }
-  /* end */
-  }
+}

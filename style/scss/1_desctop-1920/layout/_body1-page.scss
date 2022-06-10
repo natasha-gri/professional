@@ -1,113 +1,125 @@
 .body-page {
-    background: url(/img/footer-page-img-1920.png);
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
+  background: url(/img/footer-page-img-1920.png);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
+
 header {
-    background: $bg-green;
+  background: $bg-green;
 }
+
 .page {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    &__sidebar {
-        margin-bottom: 65px;
-    }
-    &__content {
-        margin-bottom: 45px;
-    }
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__sidebar {
+    margin-bottom: 65px;
+  }
+
+  &__content {
+    margin-bottom: 45px;
+  }
 }
-// start переопределение стилей бутстрапа для аккрдеона левого
-// общие
+
+// start bootstrap accordeon
+// all
 .accordion-item {
-    margin-bottom: 15px;
-    border: 0;
-    background-color: #fff0;
+  margin-bottom: 15px;
+  border: 0;
+  background-color: #fff0;
 }
+
 .accordion-body {
-    padding: 0;
+  padding: 0;
 }
-// левый аккордеон
+
+// left
 .accordion-body-sidebar {
-    padding-top: 10px;
-    border-left: $border-sidemenu;
-    border-right: $border-sidemenu;
-    border-bottom: $border-sidemenu;
+  padding-top: 10px;
+  border-left: $border-sidemenu;
+  border-right: $border-sidemenu;
+  border-bottom: $border-sidemenu;
 }
+
 .accordion-button:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
+
 .accordion-button {
-    padding: 15px 10px 15px 10px;
-    background-color: $bg-green;
+  padding: 15px 10px 15px 10px;
+  background-color: $bg-green;
+  //z-index: -1;
 }
+
 .accordion-button:not(.collapsed) {
-    color: $text-main;
-    background-color: darken( $bg-green, 10%);
+  color: $text-main;
+  background-color: darken($bg-green, 10%);
 }
+
 .accordion-item:last-of-type .accordion-button.collapsed {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-// правый
+// right
 .accordion-button--white {
-    background-color: rgba(255, 255, 255, 0);
-    border-top: 0;
-    margin-bottom: 10px;
-    padding: 5px 0 3px 0;
-    border-bottom: $border-accordeon;
+  background-color: rgba(255, 255, 255, 0);
+  border-top: 0;
+  margin-bottom: 10px;
+  padding: 5px 0 3px 0;
+  border-bottom: $border-accordeon;
 }
-.accordion-button--white:not(.collapsed) {
-    background-color: rgb(255, 255, 255);
-    border-top: 0;
-    border-bottom: $border-accordeon;
-}
-.accordion-button:focus {
-    color: $text-main;
-    border-color: rgba(0, 0, 0, 0.5);
-}
-.accordion-button:hover {
-    color: $text-main;
-    border-color: rgba(0, 0, 0, 0.5);
-}
-.accordion-body-left {
-    //padding-left: 0;
-    //padding-right: 0;
-}
-.accordion-button::after {
-    // position: absolute;
-    // right: 14px;
-    // bottom: 17px;
-    background-image: none;
-    width: 12px;
-    height: 12px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    transform: rotate(45deg);
-}
-.accordion-button:not(.collapsed)::after {
-    bottom: 15px;
-    background-image: none;
-    width: 12px;
-    height: 12px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    transform: rotate(225deg);
-}
-// end переопределение стилей бутстрапа для аккрдеона левого
 
-.footer {
-    &-wrap {
-        &:before {
-            display: none;
-        }
-        &:after {
-            display: none;
-        }
-    }
+.accordion-button--white:not(.collapsed) {
+  background-color: rgb(255, 255, 255);
+  border-top: 0;
+  border-bottom: $border-accordeon;
 }
+
+.accordion-button:focus {
+  color: $text-main;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.accordion-button:hover {
+  color: $text-main;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.accordion-button::after {
+  background-image: none;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  bottom: 15px;
+  background-image: none;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(225deg);
+}
+
+// end bootstrap accordeon
+.footer {
+  &-wrap {
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
 .footer-page {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }

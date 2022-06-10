@@ -1,116 +1,129 @@
-/* 1-Обложка */
+/* cover */
 header {
-    background: linear-gradient(90deg, #83A58A 0%, #99BFA1 44.79%, #99BFA1 100%);
+  background: linear-gradient(90deg, #83A58A 0%, #99BFA1 44.79%, #99BFA1 100%);
 }
-.header{
-    background: url('/img/cover-img-left.png'),url('/img/cover-img-right.png');
-    background-position: -8% 50%, 126% 100%; 
-    background-repeat: no-repeat;
-    background-size: 19%, 69%;
+
+.header {
+  background: url('/img/cover-img-left.png'), url('/img/cover-img-right.png');
+  background-position: -8% 50%, 126% 100%;
+  background-repeat: no-repeat;
+  background-size: 19%, 69%;
 }
 
 .cover {
-    display: flex;
-    align-items: center;
-    min-height: 69vh;
-    margin-bottom: -71px;
-    &__content {
-        margin-top: -8%;
-    }
+  display: flex;
+  align-items: center;
+  min-height: 69vh;
+  margin-bottom: -71px;
+
+  &__content {
+    margin-top: -8%;
+  }
 }
 
-/* 1 блок */
-.programs{
-    margin-bottom: $section-margin-bottomn;
-    &-header {   
-        position: relative;
-        height: 72px;
-        width: 40%;
-        background-color: #fff;
-        &::before {
-            content: '';
-            position: absolute;
-            right: -113px;
-            display: block;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 71px 0 0px 114px;
-            border-color: transparent transparent transparent #ffffff;
-        }
-    }    
-    & h2 {
-        position: relative;
-        z-index: 1;
-        margin-top: -31px;
-        
+/* 1 block */
+.programs {
+  margin-bottom: $section-margin-bottomn;
+
+  &-header {
+    position: relative;
+    height: 72px;
+    width: 40%;
+    background-color: #fff;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: -113px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 71px 0 0px 114px;
+      border-color: transparent transparent transparent #ffffff;
     }
-    &__blocks {
-        &_card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 163px;
-            padding: 5px 22px 18px 22px;
-            background-color: $card-grey;
-            box-shadow: $box-shadow-container;
-            background: url('/img/bg-card_grey-left.png'),url('/img/bg-card_grey-right.png');
-            background-position: 0% 100%, 100% 0%; 
-            background-repeat: no-repeat;
-            background-size: 100%, 35vh;
-        }
+  }
+
+  & h2 {
+    position: relative;
+    z-index: 1;
+    margin-top: -31px;
+
+  }
+
+  &__blocks {
+    &_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 163px;
+      padding: 5px 22px 18px 22px;
+      background-color: $card-grey;
+      box-shadow: $box-shadow-container;
+      background: url('/img/bg-card_grey-left.png'), url('/img/bg-card_grey-right.png');
+      background-position: 0% 100%, 100% 0%;
+      background-repeat: no-repeat;
+      background-size: 100%, 35vh;
     }
+  }
 }
 
-/* 2 блок */
-.process{    
-    background: url('/img/bg-grey-right-1.png');
-    background-position: 97% 125%; 
-    background-repeat: no-repeat;
-    background-size: 20%;
-    &__blocks {
-        padding-bottom: 130px;
-        &_item{
-            display: flex;
-        }
+/* 2 block */
+.process {
+  background: url('/img/bg-grey-right-1.png');
+  background-position: 97% 125%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+
+  &__blocks {
+    padding-bottom: 130px;
+
+    &_item {
+      display: flex;
     }
+  }
 }
 
-/* 3 блок */
+/* 3 block */
 .benefits {
-    margin-top: -70px;
-    &-header {   
-        position: relative;
-        height: 72px;
-        width: 36%;
-        background-color: $bg-green;
-        &::before {
-            content: '';
-            position: absolute;
-            right: -113px;
-            display: block;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 71px 0 0px 114px;
-            border-color: transparent transparent transparent $bg-green;
-        }
-    }    
-    & h2 {
-        position: relative;
-        z-index: 1;
-        margin-top: -31px;
-        
+  margin-top: -70px;
+
+  &-header {
+    position: relative;
+    height: 72px;
+    width: 36%;
+    background-color: $bg-green;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: -113px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 71px 0 0px 114px;
+      border-color: transparent transparent transparent $bg-green;
     }
-    &__blocks {
-        &_item {
-            margin-bottom: 55px;
-            & div {
-                &:nth-child(1) {
-                min-height: 107px;                
-                }
-            }
-            
+  }
+
+  & h2 {
+    position: relative;
+    z-index: 1;
+    margin-top: -31px;
+
+  }
+
+  &__blocks {
+    &_item {
+      margin-bottom: 55px;
+
+      & div {
+        &:nth-child(1) {
+          min-height: 107px;
         }
+      }
+
     }
+  }
 }
