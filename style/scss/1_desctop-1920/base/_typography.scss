@@ -29,22 +29,42 @@ h2 {
   margin-bottom: $section-margin-bottomn;
 }
 
-h2 {
-  @extend .first-font;
-  font-size: 1.6em; //26
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 149%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: $section-margin-bottomn;
-}
-
 .h2-page {
   margin-top: -10px;
   margin-bottom: 0.5em;
 }
 
+.text-cover1 {
+  position: relative;
+  @extend .first-font;
+  font-size: 1.3em; //16px    
+  text-align: right;
+  color: #4B594E;
+  margin-bottom: 20px;
+
+  &:before {
+    position: absolute;
+    top: -2px;
+    right: 247px;
+    content: '>';
+    @extend .second-font;
+    font-size: 1.6em;
+  }
+}
+.text-cover2 {
+  @extend .first-font;
+  font-size: 1.3em; //21px
+  line-height: 161%;
+  text-transform: lowercase;
+  color: #E2F0E5;
+  margin-bottom: 55px;
+
+  & span {
+    margin-left: 39%;
+    text-transform: uppercase;
+    color: white;
+  }
+}
 
 /* main text */
 .text-basic,
@@ -64,7 +84,7 @@ p {
   margin-bottom: 0;
 }
 
-.text-grey {
+.text--grey {
   color: $text-grey;
 }
 
@@ -85,40 +105,7 @@ p {
   text-transform: lowercase;
 }
 
-.text-cover1 {
-  position: relative;
-  @extend .first-font;
-  font-size: 1.3em; //16px    
-  text-align: right;
-  color: #4B594E;
-  margin-bottom: 20px;
-
-  &:before {
-    position: absolute;
-    top: -2px;
-    right: 247px;
-    content: '>';
-    @extend .second-font;
-    font-size: 1.6em;
-  }
-}
-
-.text-cover2 {
-  @extend .first-font;
-  font-size: 1.3em; //21px
-  line-height: 161%;
-  text-transform: lowercase;
-  color: #E2F0E5;
-  margin-bottom: 55px;
-
-  & span {
-    margin-left: 39%;
-    text-transform: uppercase;
-    color: white;
-  }
-}
-
-// links
+// start links
 a {
   @extend .second-font;
   font-size: 1em; //16px
@@ -134,7 +121,6 @@ a {
     color: darken($links, 10%);
   }
 }
-
 .top-menu-link {
   display: block;
   margin-bottom: 15px;
@@ -150,59 +136,9 @@ a {
     color: darken($top-menu-link, 20%);
   }
 }
+// end links
 
-// start bootsrap menu
-.nav-link {
-  @extend .second-font;
-  font-size: 1em; //16px
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 169%;
-  letter-spacing: 0.025em;
-  text-transform: lowercase;
-  color: $text-main;
-
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: $link-menu-hover;
-    transform: translateY(2px) scale(0);
-    transition: all 0.1s;
-  }
-
-  &:hover {
-    color: $link-menu-hover;
-
-    &::after {
-      transform: translateY(2px) scale(1);
-    }
-  }
-
-  &:focus {
-    color: $link-menu-hover;
-
-    &::after {
-      transform: translateY(2px) scale(0);
-    }
-  }
-}
-.dropdown-menu {
-  box-shadow: $box-shadow-menu;
-}
-
-.dropdown-item {
-  text-transform: lowercase;
-  color: $text-main;
-  padding-top: 0.5em;
-  padding-bottom: 0.6em;
-}
-
-// end bootstrao menu
-
-// cards
+// start cards
 .programs__blocks_card p {
   &:nth-child(1) {
     display: block;
@@ -210,7 +146,6 @@ a {
     font-size: 2.44em;
     text-transform: uppercase;
   }
-
   &:nth-child(2) {
     @extend .second-font;
     font-size: 1em;
@@ -218,7 +153,6 @@ a {
     text-align: right;
   }
 }
-
 .numbers {
   display: block;
   margin-right: 10px;
@@ -230,7 +164,6 @@ a {
   letter-spacing: 0.05em;
   color: #8EC59A;
 }
-
 .process {
   &__item {
     & p {
@@ -239,9 +172,10 @@ a {
     }
   }
 }
+// end cards
 
-// accordeon
-.accordeon-header-sidebar {
+// start accordion
+.accordion-header-sidebar {
   @extend .first-font;
   font-size: 0, 875em; //14
   font-stretch: normal;
@@ -251,12 +185,16 @@ a {
   text-transform: uppercase;
 }
 @media (max-width: 1200px) {
-  .accordeon-header-sidebar {
+  .accordion-header-sidebar {
     font-size: 0.8rem;
 }
 }
-
-.accordeon-header-main {
+@media (max-width: 768px) {
+  .accordion-header-sidebar {
+    font-size: 1rem;
+}
+}
+.accordion-header-main {
   @extend .first-font;
   font-size: 0, 875em; //14
   font-stretch: normal;
@@ -264,7 +202,6 @@ a {
   line-height: 140%;
   letter-spacing: 0.05em;
 }
-
 .accordion-body a {
   @extend .second-font;
   font-size: 1em; //16px
@@ -279,9 +216,8 @@ a {
   display: block;
   margin: 0 0 11px 0;
   padding: 0 0 0 10px;
-
   &:hover {
     background-color: lighten($bg-green, 20%);
   }
-
 }
+// END accordion

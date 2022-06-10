@@ -1,0 +1,240 @@
+// start bootsrap menu TYPOGRAPHY
+.nav-link {
+  @extend .second-font;
+  font-size: 1em; //16px
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 169%;
+  letter-spacing: 0.025em;
+  text-transform: lowercase;
+  color: $text-main;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $link-menu-hover;
+    transform: translateY(2px) scale(0);
+    transition: all 0.1s;
+  }
+
+  &:hover {
+    color: $link-menu-hover;
+
+    &::after {
+      transform: translateY(2px) scale(1);
+    }
+  }
+
+  &:focus {
+    color: $link-menu-hover;
+
+    &::after {
+      transform: translateY(2px) scale(0);
+    }
+  }
+}
+.dropdown-menu {
+  box-shadow: $box-shadow-menu;
+}
+
+.dropdown-item {
+  text-transform: lowercase;
+  color: $text-main;
+  padding-top: 0.5em;
+  padding-bottom: 0.6em;
+}
+// end bootstrap menu TYPOGRAPHY
+
+// ===== start bootstrap menu
+.menu--center {
+  justify-content: flex-end;
+}
+
+.padding--none {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.d-flex {
+  width: 24%;
+}
+
+@media (max-width: 992px) {
+  .d-flex {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav {
+    margin-right: 0;
+  }
+  .nav-link {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-expand-lg .navbar-nav {
+    margin-right: 0;
+  }
+  .nav-link {
+    text-align: center;
+  }
+}
+.nav-link {
+  padding: 0.5rem 20px;
+}
+
+.navbar-brand {
+  width: 15%;
+  & img {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .navbar-brand {
+    display: block;
+    width: 35%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .navbar-brand {
+    width: 50%;
+  }
+}
+@media (max-width: 360px) {
+  .navbar-brand {
+    width: 60%;
+  }
+}
+
+.navbar-toggler {
+  padding: 0.10rem 0.25rem;
+
+  &:focus {
+    text-decoration: none;
+    box-shadow: none;
+  }
+
+  & span {
+    font-size: 35px;
+    line-height: 150%;
+    color: $text-main;
+  }
+}
+
+.navbar-expand-lg .navbar-nav {
+  margin-right: 8%;
+}
+
+.form-control:focus {
+  border-color: #3C7D4A;
+  box-shadow: 0 0 0 0.15rem #0b6a2440;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+// ===== end bootstrap menu
+
+// ===== start bootstrap accordeon
+// all
+.accordion-item {
+  margin-bottom: 15px;
+  border: 0;
+  background-color: #fff0;
+}
+
+.accordion-body {
+  padding: 0;
+}
+
+// left
+.accordion-body-sidebar {
+  padding-top: 10px;
+  border-left: $border-sidemenu;
+  border-right: $border-sidemenu;
+  border-bottom: $border-sidemenu;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button {
+  padding: 15px 10px 15px 10px;
+  background-color: $bg-green;
+  //z-index: -1;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $text-main;
+  background-color: darken($bg-green, 10%);
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+// right
+.accordion-button--white {
+  background-color: rgba(255, 255, 255, 0);
+  border-top: 0;
+  margin-bottom: 10px;
+  padding: 5px 0 3px 0;
+  border-bottom: $border-accordeon;
+}
+
+.accordion-button--white:not(.collapsed) {
+  background-color: rgb(255, 255, 255);
+  border-top: 0;
+  border-bottom: $border-accordeon;
+}
+
+.accordion-button:focus {
+  color: $text-main;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.accordion-button:hover {
+  color: $text-main;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.accordion-button::after {
+  background-image: none;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  bottom: 15px;
+  background-image: none;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(225deg);
+}
+// ===== end bootstrap accordeon
