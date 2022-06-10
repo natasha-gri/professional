@@ -5,7 +5,6 @@
 
     &::after {
       content: '';
-      //content: none;
       position: absolute;
       display: block;
       width: 20%;
@@ -36,7 +35,6 @@
 
   .dropdown-menu {
     background-color: lighten($bg-green, 20%);
-    box-shadow: $box-shadow-menu;
   }
 
   .dropdown-item {
@@ -47,4 +45,8 @@
     white-space: normal;
     line-height: 110%;
   }
+  // accordeon
+  .accordeon-header-sidebar {
+    font-size: 1rem;
+    }
 }

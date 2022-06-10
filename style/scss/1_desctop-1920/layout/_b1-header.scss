@@ -25,6 +25,7 @@
   }
 }
 
+
 .nav-link {
   padding: 0.5rem 20px;
 }
@@ -46,7 +47,6 @@
 
 @media (max-width: 768px) {
   .navbar-brand {
-    display: block;
     width: 45%;
   }
 }
@@ -111,7 +111,7 @@
         }
 
         &:nth-child(2) {
-          width: 45%;
+          width: 50%;
           padding-left: 34px;
           list-style: none;
         }
@@ -145,7 +145,14 @@
   box-shadow: $box-shadow-menu;
 
 }
-
+@media (max-width: 991px) {
+  .bottom-menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .bottom-menu {
     position: fixed;
@@ -182,7 +189,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .logo_hide {
     display: block;
   }

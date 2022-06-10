@@ -1,18 +1,34 @@
-// Эти медиазапросы нужны, п.ч. неправильно отрабатывают бутстраповские col-md
 @media (min-width: 769px) and (max-width: 991px) {
+  .top-menu {
+    display: none;
+  }
+  // если меню переполняется
+  .menu--center {
+    overflow: scroll;
+    max-height: 84vh;
+
+    & form {
+      margin-bottom: 30px;
+    }
+  }
+  // start bootstrap menu
+  .navbar-expand-lg .navbar-nav {
+    margin-right: 0;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  // end bootstrap menu
   .header {
     background-position: -8% 50%, 842% 100%;
     background-size: 0%, 95%;
   }
-
-  .top-menu {
-    display: none;
+  .page {
+  padding-top: 165px;
   }
-
   .cover {
     min-height: 70vh;
   }
-
   .footer {
     &__blocks {
       &_rights {

@@ -189,6 +189,9 @@ a {
     }
   }
 }
+.dropdown-menu {
+  box-shadow: $box-shadow-menu;
+}
 
 .dropdown-item {
   text-transform: lowercase;
@@ -246,6 +249,11 @@ a {
   line-height: 140%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .accordeon-header-sidebar {
+    font-size: 0.8rem;
+}
 }
 
 .accordeon-header-main {

@@ -6,10 +6,11 @@ let logo_nohide = "logo--nohide";
 
 function getSize() {
     let w = window.innerWidth;
-    return w > 768
+    return w > 991
 };
 
 function getClassScroll() {
+  alert('hi');
     window.addEventListener('scroll', e => {
         if(pageYOffset > 250) {
             navbarScroll.add(acrive_class);
@@ -24,7 +25,8 @@ function getClassScroll() {
     })
 };
 
+
+
 if (getSize()) {
     getClassScroll();
 }
-

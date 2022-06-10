@@ -49,6 +49,7 @@ header {
 .accordion-button {
   padding: 15px 10px 15px 10px;
   background-color: $bg-green;
+  //z-index: -1;
 }
 
 .accordion-button:not(.collapsed) {
