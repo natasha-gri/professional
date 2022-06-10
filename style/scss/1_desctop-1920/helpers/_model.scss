@@ -5,7 +5,7 @@ html, body {
 .body-page {
   min-height: 100%;
 }
-footer {
+.footer-page {
   height: 217px;
   margin-top: -217px;
 }
@@ -13,7 +13,7 @@ footer {
   height: 217px;
 }
 @media (max-width: 768px) {
-  footer {
+  .footer-page {
     height: 316px;
     margin-top: -316px;
   }
@@ -22,7 +22,7 @@ footer {
   }
 }
 @media (max-width: 480px) {
-  footer {
+  .footer-page {
     height: 512px;
     margin-top: -512px;
   }
