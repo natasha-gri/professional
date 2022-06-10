@@ -20,7 +20,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5; }
@@ -74,9 +73,6 @@ body {
 .footer-page {
   height: 217px;
   margin-top: -217px; }
-
-.clr {
-  height: 217px; }
 
 @media (min-width: 769px) and (max-width: 991px) {
   .footer-page {
@@ -584,7 +580,7 @@ header {
 
 .page {
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 350px; }
   .page__sidebar {
     margin-bottom: 65px; }
   .page__content {
