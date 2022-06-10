@@ -1,33 +1,53 @@
 /* start footer down */
-html, body {
+html,
+body {
   height: 100%;
 }
+
 .body-page {
   min-height: 100%;
 }
+
 .footer-page {
   height: 217px;
   margin-top: -217px;
 }
+
 .clr {
   height: 217px;
 }
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .footer-page {
+    height: 316px;
+    margin-top: -316px;
+  }
+
+  .clr {
+    height: 316px;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-page {
     height: 316px;
     margin-top: -316px;
   }
+
   .clr {
     height: 316px;
   }
 }
+
 @media (max-width: 480px) {
   .footer-page {
     height: 512px;
     margin-top: -512px;
   }
+
   .clr {
     height: 512px;
   }
 }
+
 /* end footer down */

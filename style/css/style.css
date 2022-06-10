@@ -64,7 +64,8 @@ select {
   font: inherit; }
 
 /* start footer down */
-html, body {
+html,
+body {
   height: 100%; }
 
 .body-page {
@@ -77,6 +78,13 @@ html, body {
 .clr {
   height: 217px; }
 
+@media (min-width: 769px) and (max-width: 991px) {
+  .footer-page {
+    height: 316px;
+    margin-top: -316px; }
+
+  .clr {
+    height: 316px; } }
 @media (max-width: 768px) {
   .footer-page {
     height: 316px;
@@ -827,7 +835,7 @@ header {
     background-size: 0%, 108%; }
 
   .page {
-    padding-top: 180px; }
+    padding-top: 140px; }
 
   .cover {
     min-height: 66vh;
@@ -955,7 +963,7 @@ header {
     background-size: 0%, 190%; }
 
   .page {
-    padding-top: 150px; }
+    padding-top: 130px; }
 
   .cover {
     margin-bottom: 0; }
@@ -1067,18 +1075,18 @@ header {
     .menu--center form {
       margin-bottom: 30px; }
 
-  .navbar-expand-lg .navbar-nav {
-    margin-right: 0; }
-
-  .nav-link {
-    text-align: center; }
-
   .header {
     background-position: -8% 50%, 842% 100%;
     background-size: 0%, 95%; }
 
+  .body-page {
+    background: url(/img/footer-page-img-1920.png);
+    background-position: 61.5% 100%;
+    background-repeat: no-repeat;
+    background-size: 180%; }
+
   .page {
-    padding-top: 165px; }
+    padding-top: 145px; }
 
   .cover {
     min-height: 70vh; }
@@ -1146,12 +1154,22 @@ header {
     padding-right: 1rem;
     padding-left: 1rem; } }
 @media (min-width: 769px) and (max-width: 991px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0; }
+
   .navbar-expand-lg .navbar-nav {
     margin-right: 0; }
 
   .nav-link {
     text-align: center; } }
 @media (max-width: 768px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0; }
+
   .navbar-expand-lg .navbar-nav {
     margin-right: 0; }
 

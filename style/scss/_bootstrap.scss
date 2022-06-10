@@ -74,6 +74,11 @@
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
   .navbar-expand-lg .navbar-nav {
     margin-right: 0;
   }
@@ -82,6 +87,11 @@
   }
 }
 @media (max-width: 768px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
   .navbar-expand-lg .navbar-nav {
     margin-right: 0;
   }
