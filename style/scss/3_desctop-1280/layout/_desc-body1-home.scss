@@ -1,29 +1,23 @@
 @media (max-width : 1280px) {
-.header {
+  .header {
     background-position: -8% 50%, 131% 100%;
     background-size: 19%, 73%;
-}
-.process {
+  }
+
+  .process {
     background-position: 97% 111%;
     background-size: 25%;
-}
-.benefits {
-    &-header {   
-        &::before {
-        }
-    }    
-    & h2 {
-    }
+  }
+
+  .programs {
     &__blocks {
-        &_item {
-            & div {
-                &:nth-child(1) {
-                min-height: 130px;                
-                }
-            }
-            
+      &_item {
+        & div {
+          &:nth-child(1) {
+            min-height: 130px;
+          }
         }
+      }
     }
-}
-/* end */
+  }
 }

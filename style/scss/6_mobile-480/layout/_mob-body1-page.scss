@@ -1,61 +1,75 @@
 @media (max-width: 480px) {
-    .body-page {
-        background: url(/img/footer-page-img-480.png);
-        background-position: 50% 100%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+  .body-page {
+    background: url(/img/footer-page-img-480.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
   .header {
     background-position: -8% 50%, -40% 100%;
     background-repeat: no-repeat;
     background-size: 0%, 190%;
   }
+
   .page {
     padding-top: 150px;
-    }
+  }
+
   .cover {
     margin-bottom: 0;
   }
+
   .programs {
     padding-top: 45px;
+
     &-header {
       display: none;
     }
+
     & h2 {
       margin-top: 0;
     }
-    
+
   }
+
   .process {
     background-size: 55%;
+
     &__blocks {
       padding-bottom: 62px;
     }
   }
+
   .benefits {
     margin-top: 0;
     padding-top: 45px;
+
     &-header {
       display: none;
     }
+
     & h2 {
       margin-top: 0;
     }
+
     &__blocks {
       &_item {
         margin-bottom: 0;
-          & div {
+
+        & div {
+          margin-bottom: 25px;
+
+          &:nth-child(1) {
+            min-height: 0;
+          }
+
+          &:nth-child(2) {
             margin-bottom: 25px;
-            &:nth-child(1) {
-              min-height: 0;
-            }
-            &:nth-child(2) {
-              margin-bottom: 25px;
           }
-          }
-          
+        }
+
       }
+    }
   }
-  }
-  /* end */
-  }
+}

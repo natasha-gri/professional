@@ -1,60 +1,66 @@
 @media (max-width: 768px) {
-.footer {
+  .footer {
     background: url(/img/footer-mobile.png);
     background-position: 50% -34%;
     background-repeat: no-repeat;
     background-size: 100%;
+
     &-wrap {
       &:before {
         content: url('/img/diamonds-left-mob.png');
         top: 161px;
         left: -17px;
       }
+
       &:after {
         content: url('/img/diamonds-right-mob.png');
         bottom: 179px;
         right: 10px;
       }
     }
+
     &__blocks {
       padding: 17px 0 3px 15px;
-        &_rights {
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: flex-start;
-          padding-left: 0;
-          padding-right: 0;
-          box-sizing: border-box;
-          & img {
-            width: 42%;
-          }
-          & p {
-            width: 45%;
-            padding-top: 15px;
+
+      &_rights {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+
+        & img {
+          width: 42%;
+        }
+
+        & p {
+          width: 45%;
+          padding-top: 15px;
+        }
+      }
+
+      &_contacts {
+        padding-left: 0;
+        padding-right: 0;
+
+        &_adress {
+          &_row {
+            & div {
+              &:nth-child(1) {
+                width: 30%;
+                padding-right: 0;
+                text-align: left;
+              }
+            }
           }
         }
-        &_contacts {
-          padding-left: 0;
-          padding-right: 0;
-          &_adress {
-              &_row {
-                  & div {
-                  &:nth-child(1){
-                    width: 30%;
-                      padding-right: 0;
-                      text-align: left;
-                  }
-                  &:nth-child(2){
-                  }
-              }
-              }
-          }
-          &_time {
-              width: 45%;
-          }
+
+        &_time {
+          width: 45%;
+        }
       }
-      }
-}
+    }
+  }
 
 }
-/* end */
