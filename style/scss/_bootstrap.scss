@@ -164,8 +164,12 @@
 }
 // ===== end bootstrap menu
 
-// ===== start bootstrap accordeon
+// ===== start bootstrap accordion
 // all
+.accordion {
+  min-height: 200px;
+  padding-bottom: 50px;
+}
 .accordion-item {
   margin-bottom: 15px;
   border: 0;
