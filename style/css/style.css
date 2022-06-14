@@ -734,8 +734,16 @@ header {
     background-repeat: no-repeat;
     background-size: 0%, 76%; }
 
+  .programs__blocks_card {
+    min-height: 200px; }
+
   .process {
-    background-position: 97% 107%; } }
+    background-position: 97% 107%; }
+
+  .benefits__blocks_item {
+    margin-bottom: 55px; }
+    .benefits__blocks_item div:nth-child(1) {
+      min-height: 137px; } }
 @media (max-width: 1024px) {
   .body-page {
     background-position: 63.5% 100%;
@@ -1089,7 +1097,17 @@ header {
     padding-top: 145px; }
 
   .cover {
-    min-height: 70vh; }
+    min-height: 115vh; }
+    .cover__content {
+      margin-top: 0; }
+
+  .programs-header {
+    width: 57%; }
+
+  .benefits-header {
+    width: 57%; }
+  .benefits__blocks_item div:nth-child(1) {
+    min-height: 188px; }
 
   .footer__blocks_rights {
     flex-direction: row;

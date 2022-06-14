@@ -5,7 +5,27 @@
     background-size: 0%, 76%;
   }
 
+  .programs {
+    &__blocks {
+      &_card {
+        min-height: 200px;
+      }
+    }
+  }
+
   .process {
     background-position: 97% 107%;
+  }
+  .benefits {
+    &__blocks {
+      &_item {
+        margin-bottom: 55px;
+        & div {
+          &:nth-child(1) {
+            min-height: 137px;
+          }
+        }
+      }
+    }
   }
 }
