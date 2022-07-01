@@ -41,6 +41,8 @@
 
 // start script menu scroll
 .bottom-menu {
+  position: relative;
+  z-index: 100;
   background: rgba(255, 255, 255, 0.44);
   backdrop-filter: blur(11px);
   box-shadow: $box-shadow-menu;

@@ -21,7 +21,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Set core body defaults */
 body {
-    //min-height: 100vh;
+    /* min-height: 100vh; */
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
@@ -33,8 +33,8 @@ ol {
 }
 
 ul {
-    margin-top: 0; //переопределение бутстрапа
-    margin-bottom: 0; //переопределение бутстрапа
+    margin-top: 0; /*переопределение бутстрапа*/
+    margin-bottom: 0; /*переопределение бутстрапа*/
     padding-left: 0;
     list-style: none;
 }
@@ -73,15 +73,15 @@ select {
     font: inherit;
 }
 
-// start переопределение стилей bootstap
-// .container {
-//     padding-left: 0;
-//     padding-right: 0;
-// }
-// @media (max-width: 480px) and (min-height: 481px) {
-//     .container {
-//         padding-left: 12px;
-//         padding-right: 12px;
-//     }
-// }
-// end переопределение стилей bootstap
+/* start переопределение стилей bootstap */
+/* .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+@media (max-width: 480px) and (min-height: 481px) {
+    .container {
+    padding-left: 12px;
+    padding-right: 12px;
+    }
+} */
+/* end переопределение стилей bootstap */

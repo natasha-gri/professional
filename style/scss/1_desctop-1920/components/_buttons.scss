@@ -18,3 +18,25 @@
     background-color: darken($btn, 3%);
   }
 }
+
+.btn-page {
+  @extend .second-font;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    background-color: #99bfa1;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 48px 11px 48px;
+    box-shadow: $box-shadow-btn;
+
+  &:hover {
+    background-color: lighten($btn-page, 5%);
+  }
+
+  &:active {
+    background-color: darken($btn-page, 10%);
+  }
+}
