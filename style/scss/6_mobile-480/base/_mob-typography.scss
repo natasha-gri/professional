@@ -10,4 +10,22 @@
       margin-left: 15%;
     }
   }
+  
+// start form
+.form__block_wrap p {
+  &:nth-child(1) {
+    display: block;
+    font-size: 1.2em;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &:nth-child(2) {
+    font-size: 0.8em;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+}
+// end for
+
 }

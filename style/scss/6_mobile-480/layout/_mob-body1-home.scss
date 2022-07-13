@@ -29,6 +29,24 @@
     }
   }
 
+  .form {
+    &__block {
+      &_wrap {
+        width: 94%;
+        padding: 30px 20px 30px 20px;
+        input[type=radio]{
+          width: 5%;
+        }
+      }
+    }
+  }
+  label {
+    font-size: 0.8em;
+  }
+  .mark-p {
+    font-size: 0.8em;
+  }
+
   .benefits {
     margin-top: 0;
     padding-top: 45px;

@@ -142,7 +142,7 @@
                 <h1>ОБУЧАЕМ с&nbsp;<span style="font-size: 1.31em">2004</span> года</h1>
                 <p class="text-cover1">100&nbsp;000 обучено</p>
                 <p class="text-cover2">Профессионалов много&nbsp;&mdash;<br><span>профессионал</span> один</p>
-                <button class="btn-cover">подать заявку</button>
+                <button class="btn-cover add__ad">подать заявку</button>
               </div>
             </div>
           </div>
@@ -182,6 +182,8 @@
         </div>
       </div>
     </section>
+
+   
 
     <!-- 2 process -->
     <section>
@@ -315,6 +317,81 @@
       </div>
 
     </footer>
+
+     <!-- модалка -->
+     <section>
+      <div class="form modal__add hide">
+        <div>
+          <div class="form__block">
+            <div class="form__block_wrap">              
+                <form action="#" method="get">
+                  <button class="modal__close">X</button>
+                  <p>Предварительная заявка на&nbsp;обучение</p>
+                  <p>Заполните данную форму и&nbsp;отправьте в&nbsp;АНО ДПО &laquo;Профессионал&raquo;. С&nbsp;вами свяжется наш сотрудник</p>
+                  <div>
+                    <!-- имя -->
+                    <label for="input-name">наименование вашей организации</label>
+                    <input id="input-name" type="text" placeholder="Официальное наименование" required autofocus>
+                  </div>
+                  <!-- количество -->
+                  <div>
+                    <label for="input-namber">количество заявляемых обучающихся</label>
+                    <input id="input-namber" type="text" pattern="^[ 0-9]+$" placeholder="10" required>
+                  </div>
+                  <!-- выбор проф -->
+                  <!-- <div>
+                    <input type="checkbox" name="" id="po">
+                    <label for="po">профессиональное обучение</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="dpo">
+                    <label for="dpo"> дополнительное профессиональное образование</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="do">
+                    <label for="do">дополнительное образование</label>
+                  </div> -->
+                  <!-- выбор проф -->
+                  <div>
+                    <label for="prof">обучающая программа</label>
+                    <div><input type="radio" name="po" id="prof" required>профессиональное обучение</div>                      
+                    <div><input type="radio" name="po" id="prof" required>дополнительное профессиональное образование</div>                      
+                    <div><input type="radio" name="po" id="prof" required>дополнительное образование</di>
+                    </div>
+                  </div>
+                  <!-- тел -->
+                  <div>
+                    <label for="online_phone">контактный телефон:</label>
+                    <input id="online_phone" name="phone" type="tel" maxlength="50"
+                    autofocus="autofocus" required="required"
+                    value="+7(___)___-__-__"
+                    pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                    placeholder="+7(___)___-__-__">
+                  </div>
+                  <!-- почта -->
+                  <div>
+                    <label for="input-mail">e-mail</label>
+                    <input type="email" name="" id="input-mail" 
+                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                    placeholder="mail@mail.ru" required>
+                  </div>
+                  <!-- сообщение -->
+                  <div>
+                    <label for="input-message">сообщение</label>
+                    <textarea name="comment" id="input-message" rows="3" placeholder="Вы можете оставить нам сообщение, если в этом есть необходимость"></textarea>
+                  </div>
+                  <p class="mark-p"><span style="color: red;">*</span> - поля, обязательные для заполнения</p>
+                  <!-- кнопки -->
+                  <div class="form-btn">
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить"> 
+                  </div>  
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

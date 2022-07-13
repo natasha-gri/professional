@@ -34,6 +34,15 @@
     }
   }
 
+  .form {
+    &__block {
+      align-items: center;
+      &_wrap {
+        width: 80%;
+      }
+    }
+  }
+
   .benefits {
     &-header {
       width: 52%;

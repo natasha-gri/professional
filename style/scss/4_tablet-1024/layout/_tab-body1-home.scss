@@ -16,6 +16,16 @@
   .process {
     background-position: 97% 107%;
   }
+  .form {
+    &__block {
+      align-items: flex-start;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      &_wrap {
+        width: 60%;
+      }
+    }
+  }
   .benefits {
     &__blocks {
       &_item {

@@ -68,6 +68,136 @@ header {
   }
 }
 
+/* modal */
+.form {
+  position: relative;
+  height: 100vh;  
+  overflow: hidden;
+  &__block {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    // padding: 75px 0 75px 0;
+    overflow-y: auto;
+    background-color: #0c0c0c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // justify-content: center;
+    &_wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 45%;
+      min-height: 163px;
+      padding: 30px 30px 35px 30px;  
+      position: relative;    
+      box-shadow: $box-shadow-container;
+      background: url('/img/bg-card_grey-right.png');
+      background-position: 50% 5%;
+      background-repeat: no-repeat;
+      background-size: 63vh;
+      background-color: white;
+      input {
+        width: 100%;
+        height: 35px;
+        margin: 0 0 5px 0;
+        padding: 0 0 0 5px;
+        border: 1px solid #767676;
+        outline: none;
+      }
+      input[type=checkbox]{
+        width: 3%;
+        margin-right: 15px;
+      }
+      input[type=radio]{
+        width: 3%;
+        height: 16px;
+        margin: 0 15px 5px 0;
+      }
+      input[type=submit]{
+        width: 49%;
+      }
+      input[type=reset]{
+        width: 49%;
+      }
+      input[type=submit]{
+        text-transform: uppercase;
+        background-color: $btn-page;
+        border: none;
+        box-shadow: $box-shadow-container;
+        &:hover {
+          background-color: lighten($btn-page, 5%);
+        }
+        &:active {
+          background-color: darken($btn-page, 10%);
+        }
+      }
+      input[type=reset]{
+        text-transform: uppercase;
+        background-color: #a4a4a4;
+        border: none;
+        box-shadow: $box-shadow-container;
+        &:hover {
+          background-color: #bebebe;
+        }
+        &:active {
+          background-color: #898989;
+        }
+      }
+      textarea {
+        width: 100%;
+        padding: 0 0 0 5px;
+        border: 1px solid #767676;
+        outline: none;
+        resize: none;
+      }
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}  
+label {
+  // margin-bottom: 5px;
+}
+label:after {
+  content: " *";
+  font-size: 1.2em;
+  color:red;
+}
+label[for=input-message]:after {
+  content: none;
+}
+label[for=prof] {
+  margin-bottom: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.modal__close {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  &-svg {
+    width: 50%;
+  }
+}
+
 /* 2 block */
 .process {
   background: url('/img/bg-grey-right-1.png');

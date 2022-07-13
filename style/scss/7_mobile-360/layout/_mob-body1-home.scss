@@ -20,4 +20,26 @@
   .process {
     background-size: 67%;
   }
+
+  .form {
+    &__block {
+      align-items: flex-start;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      &_wrap {
+        width: 94%;
+        padding: 22px 13px 26px 13px;
+        input[type=radio]{
+          width: 5%;
+        }
+      }
+    }
+  }
+  label {
+    font-size: 0.8em;
+  }
+  .mark-p {
+    font-size: 0.8em;
+  }
+
 }
