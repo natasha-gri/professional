@@ -324,7 +324,7 @@
         <div>
           <div class="form__block">
             <div class="form__block_wrap">              
-                <form action="#" method="get">
+                <form action="#" method="get" class="form__block_wrap_form">
                   <button class="modal__close">X</button>
                   <p>Предварительная заявка на&nbsp;обучение</p>
                   <p>Заполните данную форму и&nbsp;отправьте в&nbsp;АНО ДПО &laquo;Профессионал&raquo;. С&nbsp;вами свяжется наш сотрудник</p>
@@ -355,9 +355,9 @@
                   <div>
                     <label for="prof">обучающая программа</label>
                     <div><input type="radio" name="po" id="prof" required>профессиональное обучение</div>                      
-                    <div><input type="radio" name="po" id="prof" required>дополнительное профессиональное образование</div>                      
-                    <div><input type="radio" name="po" id="prof" required>дополнительное образование</di>
-                    </div>
+                    <div><input type="radio" name="po" id="prof" required>дополнительное профессиональное образование</div>
+                    <div><input type="radio" name="po" id="prof" required>дополнительное образование</div>
+                    
                   </div>
                   <!-- тел -->
                   <div>
@@ -380,16 +380,20 @@
                     <label for="input-message">сообщение</label>
                     <textarea name="comment" id="input-message" rows="3" placeholder="Вы можете оставить нам сообщение, если в этом есть необходимость"></textarea>
                   </div>
-                  <p class="mark-p"><span style="color: red;">*</span> - поля, обязательные для заполнения</p>
+                  <p class="mark-p"><span style="color: red;">*</span> - поля, обязательные для заполнения. <span  class="mark-attention" style="color: red;">Заполните отмеченные поля</span></p>
                   <!-- кнопки -->
                   <div class="form-btn">
-                    <input type="submit" value="Отправить">
+                    <input type="submit" value="Отправить" class="modal__btn-submit">
                     <input type="reset" value="Очистить"> 
                   </div>  
                 </form>
               </div>
           </div>
         </div>
+      </div>
+
+      <div class="modal__add-attention">
+
       </div>
     </section>
 

@@ -65,19 +65,47 @@ window.addEventListener("DOMContentLoaded", function() {
 // start проверка формы
 
 // start модалка
+
 const modalAdd = document.querySelector('.modal__add'), // 1.получаем модальное окно
-addAd = document.querySelector('.add__ad');	// 2.получаем основную кнопку
+      addAd = document.querySelector('.add__ad'), // 2.получаем основную кнопку
+      modalBtnSubmit = document.querySelector('.modal__btn-submit'),	// 5.1 получаем кнопку формы
+      formBlockWrapForm = document.querySelector('.form__block_wrap_form'), // 6.1 получаем форму, что ее очистить после закрытия
+      markAttention = document.querySelector('.mark-attention');
+
 addAd.addEventListener('click', () => {
   modalAdd.classList.remove('hide'); // 3.убираем класс скрывающий модалку
+  modalBtnSubmit.disabled = true; // 5.2 отключаем кнопку формы
+
 });
+
 modalAdd.addEventListener('click', (event) => {	
-  console.log(event);
-  const target = event.target; // 4. перехватываем событие клика и его параметр, кт содержит информацию об области клика
-  // если параметр отвечает услувию, то модалку закрываем
+  //console.log(event);
+  const target = event.target; // 4.1 перехватываем событие клика и его параметр, кт содержит информацию об области клика
+  
   if (target.classList.contains('modal__close') || 
   target.classList.contains('form__block')) {
-    modalAdd.classList.add('hide');
+    modalAdd.classList.add('hide'); // 4.2 если параметр отвечает услувию, то модалку закрываем
+    formBlockWrapForm.reset(); // 6.2 очищаем форму при закрытии модалки
   }
 });
+
+//const elementsModalSubmit = formBlockWrapForm.elements; // 7.1  получаем все элементы формы
+//console.log([...elementsModalSubmit].filter((elem) => {
+  //return elem.tagName !== 'BUTTON' && elem.type !== 'submit' && elem.type !== 'reset'; // 7.3 отфильтровываем ненужные
+//})); // 7.2 получаем все элементы формы в виде массива
+
+// 7 тоже самое но короче
+const elementsModalSubmit = [...formBlockWrapForm.elements] // 7.1  получаем все элементы формы
+.filter(elem => elem.tagName !== 'BUTTON' && elem.type !== 'submit' && elem.type !== 'reset' && elem.tagName !== 'TEXTAREA'); // 7.3 отфильтровываем ненужные
+console.log(elementsModalSubmit); // проверяем отфильтрованные
+
+formBlockWrapForm.addEventListener ('input', () => { // 7.4 проверяем заполняем ли поля формы
+  //console.log(1);
+  const validForm = elementsModalSubmit.every(elem => elem.value); // 7.5 проверяем заполненны ли все поля
+  console.log(validForm);
+  modalBtnSubmit.disabled = !validForm; // 7.6 разблокируем кнопку
+  markAttention.style.display = validForm ? 'none' : '' ; // 7.7 отключаем надпись если поля заполненны
+})
+
 // start модалка
 
