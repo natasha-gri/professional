@@ -37,11 +37,11 @@ body {
   .clr {
     height: 455.59px; } }
 /* end footer down */
-.first-font, h1, h2, .text-cover1, .text-cover2, .programs__blocks_card p:nth-child(1), .numbers, .form__block_wrap p:nth-child(2), .accordion-header-sidebar, .accordion-header-main {
+.first-font, h1, h2, .text-cover1, .text-cover2, .programs__blocks_card p:nth-child(1), .numbers, .form__block_wrap p:nth-child(2), .form2__block-attention_wrap p:nth-child(2), .accordion-header-sidebar, .accordion-header-main {
   font-family: 'G Display', sans-serif; }
 
 .second-font, .text-cover1:before, .text-basic,
-p, a, .top-menu-link, .programs__blocks_card p:nth-child(2), .form__block_wrap p:nth-child(3), .accordion-body a, .btn-cover, .btn-page, .nav-link {
+p, a, .top-menu-link, .programs__blocks_card p:nth-child(2), .form__block_wrap p:nth-child(3), .form2__block-attention_wrap p:nth-child(3), .accordion-body a, .btn-cover, .btn-page, .nav-link {
   font-family: 'Roboto', sans-serif; }
 
 /* h1 */
@@ -178,6 +178,16 @@ a {
 .form__block_wrap p:nth-child(3) {
   font-size: 1em;
   margin-bottom: 10px; }
+
+.form2__block-attention_wrap p:nth-child(2) {
+  display: block;
+  font-size: 1.6em;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center; }
+.form2__block-attention_wrap p:nth-child(3) {
+  font-size: 1em;
+  text-align: center; }
 
 .accordion-header-sidebar {
   font-size: 0, 875em;
@@ -424,7 +434,7 @@ label[for=prof] {
 .hide {
   display: none; }
 
-.modal__close {
+.modal__close, .modal__close-attention {
   width: 50px;
   height: 50px;
   box-sizing: border-box;
@@ -436,8 +446,38 @@ label[for=prof] {
   right: 10px;
   border-radius: 5px;
   cursor: pointer; }
-  .modal__close-svg {
+  .modal__close-svg, .modal__close-attention-svg {
     width: 50%; }
+
+.form2 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+  .form2__block-attention {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #0c0c0c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .form2__block-attention_wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 45%;
+      min-height: 163px;
+      padding: 60px 30px 60px 30px;
+      position: relative;
+      box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+      background: url("/img/bg-card_grey-right.png");
+      background-position: 50% 5%;
+      background-repeat: no-repeat;
+      background-size: 63vh;
+      background-color: white; }
 
 /* 2 block */
 .process {

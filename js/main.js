@@ -72,6 +72,16 @@ const modalAdd = document.querySelector('.modal__add'), // 1.получаем м
       formBlockWrapForm = document.querySelector('.form__block_wrap_form'), // 6.1 получаем форму, что ее очистить после закрытия
       markAttention = document.querySelector('.mark-attention');
 
+const modalAddAttention = document.querySelector('.modal__add-attention'); // 8.получаем модальное окно
+modalAddAttention.addEventListener('click', (event) => {
+  const target = event.target;
+  if (target.classList.contains('modal__close-attention') || target.classList.contains('alert__block-attention')) {
+    modalAddAttention.classList.add('hide');
+  }
+});
+
+
+
 addAd.addEventListener('click', () => {
   modalAdd.classList.remove('hide'); // 3.убираем класс скрывающий модалку
   modalBtnSubmit.disabled = true; // 5.2 отключаем кнопку формы

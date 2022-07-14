@@ -190,6 +190,21 @@ a {
     margin-bottom: 10px;
   }
 }
+.form2__block-attention_wrap p{
+  &:nth-child(2) {
+    display: block;
+    @extend .first-font;
+    font-size: 1.6em;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &:nth-child(3) {
+    @extend .second-font;
+    font-size: 1em;
+    text-align: center;
+  }
+}
 // end form
 
 // start accordion
