@@ -62,9 +62,9 @@ window.addEventListener("DOMContentLoaded", function() {
   input.focus();
   setCursorPosition(3, input);
 });
-// start проверка формы
 
-// start модалка
+
+// start модалка-форма
 
 const modalAdd = document.querySelector('.modal__add'), // 1.получаем модальное окно
       addAd = document.querySelector('.add__ad'), // 2.получаем основную кнопку

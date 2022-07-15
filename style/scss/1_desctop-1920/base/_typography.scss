@@ -174,17 +174,34 @@ a {
 }
 // end cards
 
-// start form
+// start form4 и 5
+// прописать вручную фонтфамили
 .form__block_wrap p {
   &:nth-child(2) {
     display: block;
     @extend .first-font;
+    // font-family: 'G Display', sans-serif;
     font-size: 1.6em;
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
   }
   &:nth-child(3) {
+    @extend .second-font;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+}
+.form__block_wrap p {
+  &:nth-child(4) {
+    display: block;
+    font-family: 'G Display', sans-serif;
+    font-size: 1.6em;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &:nth-child(5) {
     @extend .second-font;
     font-size: 1em;
     margin-bottom: 10px;

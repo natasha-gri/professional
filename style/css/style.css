@@ -41,7 +41,7 @@ body {
   font-family: 'G Display', sans-serif; }
 
 .second-font, .text-cover1:before, .text-basic,
-p, a, .top-menu-link, .programs__blocks_card p:nth-child(2), .form__block_wrap p:nth-child(3), .form2__block-attention_wrap p:nth-child(3), .accordion-body a, .btn-cover, .btn-page, .nav-link {
+p, a, .top-menu-link, .programs__blocks_card p:nth-child(2), .form__block_wrap p:nth-child(3), .form__block_wrap p:nth-child(5), .form2__block-attention_wrap p:nth-child(3), .accordion-body a, .btn-cover, .btn-page, .nav-link {
   font-family: 'Roboto', sans-serif; }
 
 /* h1 */
@@ -176,6 +176,17 @@ a {
   text-transform: uppercase;
   text-align: center; }
 .form__block_wrap p:nth-child(3) {
+  font-size: 1em;
+  margin-bottom: 10px; }
+
+.form__block_wrap p:nth-child(4) {
+  display: block;
+  font-family: 'G Display', sans-serif;
+  font-size: 1.6em;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center; }
+.form__block_wrap p:nth-child(5) {
   font-size: 1em;
   margin-bottom: 10px; }
 
@@ -412,6 +423,7 @@ header {
           background-color: #898989; }
       .form__block_wrap textarea {
         width: 100%;
+        height: 65px;
         padding: 0 0 0 5px;
         border: 1px solid #767676;
         outline: none;
