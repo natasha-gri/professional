@@ -4,7 +4,7 @@ header {
 }
 
 .header {
-  background: url('/img/cover-img-left.png'), url('/img/cover-img-right.png');
+  background: url('/img/cover-img-left.svg'), url('/img/cover-img-right.svg');
   background-position: -8% 50%, 126% 100%;
   background-repeat: no-repeat;
   background-size: 19%, 69%;
@@ -60,7 +60,7 @@ header {
       padding: 5px 22px 18px 22px;
       background-color: $card-grey;
       box-shadow: $box-shadow-container;
-      background: url('/img/bg-card_grey-left.png'), url('/img/bg-card_grey-right.png');
+      background: url('/img/bg-card_grey-left.svg'), url('/img/bg-card_grey-right.svg');
       background-position: 0% 100%, 100% 0%;
       background-repeat: no-repeat;
       background-size: 100%, 35vh;
@@ -95,7 +95,7 @@ header {
       padding: 30px 30px 35px 30px;  
       position: relative;    
       box-shadow: $box-shadow-container;
-      background: url('/img/bg-card_grey-right.png');
+      background: url('/img/bg-card_grey-right.svg');
       background-position: 50% 5%;
       background-repeat: no-repeat;
       background-size: 63vh;
@@ -224,7 +224,7 @@ label[for=prof] {
       padding: 60px 30px 60px 30px;  
       position: relative;    
       box-shadow: $box-shadow-container;
-      background: url('/img/bg-card_grey-right.png');
+      background: url('/img/bg-card_grey-right.svg');
       background-position: 50% 5%;
       background-repeat: no-repeat;
       background-size: 63vh;
@@ -235,7 +235,7 @@ label[for=prof] {
 
 /* 2 block */
 .process {
-  background: url('/img/bg-grey-right-1.png');
+  background: url('/img/bg-grey-right-1.svg');
   background-position: 97% 125%;
   background-repeat: no-repeat;
   background-size: 20%;
