@@ -31,7 +31,7 @@
     border-radius: 3px;
     padding: 12px 48px 11px 48px;
     box-shadow: $box-shadow-btn;
-
+    text-decoration: none;
   &:hover {
     background-color: lighten($btn-page, 5%);
   }

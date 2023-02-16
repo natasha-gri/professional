@@ -1,4 +1,5 @@
 'use strict';
+// выпадающее меню
 let navbarScroll = document.getElementById('navbarScroll').classList;
 let acrive_class = "bottom-menu-scroll--scrolled";
 
@@ -22,8 +23,6 @@ function getClassScroll() {
 
   })
 };
-
-
 
 if (getSize()) {
   getClassScroll();
@@ -65,21 +64,21 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 // start модалка-форма
-
 const modalAdd = document.querySelector('.modal__add'), // 1.получаем модальное окно
       addAd = document.querySelector('.add__ad'), // 2.получаем основную кнопку
       modalBtnSubmit = document.querySelector('.modal__btn-submit'),	// 5.1 получаем кнопку формы
       formBlockWrapForm = document.querySelector('.form__block_wrap_form'), // 6.1 получаем форму, что ее очистить после закрытия
       markAttention = document.querySelector('.mark-attention');
 
-const modalAddAttention = document.querySelector('.modal__add-attention'); // 8.получаем модальное окно
-modalAddAttention.addEventListener('click', (event) => {
-  const target = event.target;
-  if (target.classList.contains('modal__close-attention') || target.classList.contains('alert__block-attention')) {
-    modalAddAttention.classList.add('hide');
-  }
-});
-
+// модалка сособщения
+// const modalAddAttention = document.querySelector('.modal__add-attention'); // 8.получаем модальное окно итогового сообщения
+// modalAddAttention.addEventListener('click', (event) => {
+//   const target = event.target;
+//   if (target.classList.contains('modal__close-attention') || target.classList.contains('alert__block-attention')) {
+//     modalAddAttention.classList.add('hide');
+//   }
+// });
+//  end модалка сособщения
 
 
 addAd.addEventListener('click', () => {

@@ -302,6 +302,9 @@ a {
 .logo--nohide {
   display: block; }
 
+@media (max-width: 1024px) {
+  .form-hide {
+    display: none !important; } }
 /* cover */
 header {
   background: linear-gradient(90deg, #83A58A 0%, #99BFA1 44.79%, #99BFA1 100%); }
@@ -342,6 +345,9 @@ header {
     position: relative;
     z-index: 1;
     margin-top: -31px; }
+  .programs .programs__item {
+    text-decoration: none;
+    cursor: pointer; }
   .programs__blocks_card {
     display: flex;
     flex-direction: column;
@@ -447,8 +453,8 @@ label[for=prof] {
   display: none; }
 
 .modal__close, .modal__close-attention {
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -457,9 +463,10 @@ label[for=prof] {
   top: 12px;
   right: 10px;
   border-radius: 5px;
-  cursor: pointer; }
-  .modal__close-svg, .modal__close-attention-svg {
-    width: 50%; }
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+  padding-bottom: 5px; }
 
 .form2 {
   position: relative;
@@ -645,7 +652,8 @@ label[for=prof] {
   border: none;
   border-radius: 3px;
   padding: 12px 48px 11px 48px;
-  box-shadow: 0 2px 4px -1px rgba(34, 34, 34, 0.49); }
+  box-shadow: 0 2px 4px -1px rgba(34, 34, 34, 0.49);
+  text-decoration: none; }
   .btn-page:hover {
     background-color: #a9c9af; }
   .btn-page:active {
@@ -1266,6 +1274,9 @@ label[for=prof] {
   min-height: 200px;
   padding-bottom: 50px; }
 
+.accordion-left {
+  padding-bottom: 0px; }
+
 .accordion-item {
   margin-bottom: 15px;
   border: 0;
@@ -1331,3 +1342,5 @@ label[for=prof] {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   transform: rotate(225deg); }
+
+/*# sourceMappingURL=style.css.map */

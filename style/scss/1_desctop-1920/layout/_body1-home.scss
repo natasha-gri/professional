@@ -50,7 +50,10 @@ header {
     margin-top: -31px;
 
   }
-
+  .programs__item{
+    text-decoration: none;
+    cursor: pointer;
+  }
   &__blocks {
     &_card {
       display: flex;
@@ -184,8 +187,8 @@ label[for=prof] {
 }
 
 .modal__close, .modal__close-attention {
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -194,10 +197,13 @@ label[for=prof] {
   top: 12px;
   right: 10px;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
-  &-svg {
-    width: 50%;
-  }
+  font-size: 26px;
+  padding-bottom: 5px;
+  // &-svg {
+  //   width: 50%;
+  // }
 }
 
 .form2 {

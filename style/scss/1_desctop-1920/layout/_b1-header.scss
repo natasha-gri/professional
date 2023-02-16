@@ -46,8 +46,8 @@
   background: rgba(255, 255, 255, 0.44);
   backdrop-filter: blur(11px);
   box-shadow: $box-shadow-menu;
-
 }
+
 @media (max-width: 991px) {
   .bottom-menu {
     position: fixed;
@@ -64,7 +64,6 @@
     width: 100%;
   }
 }
-
 .bottom-menu-scroll {
   &--scrolled {
     position: fixed;
@@ -75,7 +74,6 @@
     animation-duration: 0.5s;
   }
 }
-
 @keyframes fadeInUp {
   from {
     opasity: 0;
@@ -100,6 +98,11 @@
 
 .logo--nohide {
   display: block;
+}
+@media (max-width: 1024px){
+  .form-hide{
+    display: none!important;
+  }
 }
 
 // end script menu scroll
