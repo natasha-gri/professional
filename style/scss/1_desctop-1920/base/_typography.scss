@@ -96,8 +96,10 @@ p {
   color: white;
 }
 
-.footer-wrap div p {
+.footer-wrap div p, .footer-wrap div a {
   font-size: 0.875em; //14
+  text-decoration: none;
+  color: $text-main;
 }
 
 .footer-wrap div strong {

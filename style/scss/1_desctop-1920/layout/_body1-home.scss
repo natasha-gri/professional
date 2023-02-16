@@ -2,14 +2,12 @@
 header {
   background: linear-gradient(90deg, #83A58A 0%, #99BFA1 44.79%, #99BFA1 100%);
 }
-
 .header {
-  background: url('/img/cover-img-left.svg'), url('/img/cover-img-right.svg');
-  background-position: -8% 50%, 126% 100%;
+  background: url('../../img/cover-img-left.svg'), url('../../img/cover-img-right.svg');
+  background-position: -5% 50%, 126% 100%;
   background-repeat: no-repeat;
   background-size: 19%, 69%;
 }
-
 .cover {
   display: flex;
   align-items: center;
@@ -19,6 +17,65 @@ header {
   &__content {
     margin-top: -8%;
   }
+}
+@media (min-width : 1600px){
+  .cover__content{
+    width: 62%;
+  }
+  h1{
+    font-size: 3em;
+  }
+}
+@media (max-width : 1280px) {
+  .header {
+    background-position: -5% 50%, 131% 100%;
+    background-size: 19%, 73%;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    background-position: -5% 50%, 196% 100%;
+    background-repeat: no-repeat;
+    background-size: 22%, 84%;
+  }
+  .cover {
+    display: flex;
+    align-items: center;
+    min-height: 580px;
+    margin-bottom: -71px;
+}
+}
+@media (max-width : 768px){
+  .header {
+    background-position: -8% 30%, -100% 100%;
+    background-size: 39%, 128%;
+}
+  .cover {
+    min-height: 640px;
+    padding-top: 46px;
+}
+}
+@media (max-width: 480px) {
+  .header {
+    background-position: -8% 37%, -39% 199%;
+    background-size: 43%, 147%;
+}
+  .cover {
+    min-height: 500px;
+    padding-top: 96px;
+    margin-bottom: 0;
+}
+}
+@media (max-width: 360px) {
+  .header {
+    background-position: -7% 23%, -14% 140%;
+    background-repeat: no-repeat;
+    background-size: 48%, 197%;
+}
+  .cover {
+    //min-height: 79vh;
+    padding-top: 91px;
+}
 }
 
 /* 1 block */

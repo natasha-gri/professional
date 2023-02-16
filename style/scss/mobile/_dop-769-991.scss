@@ -11,12 +11,12 @@
       margin-bottom: 30px;
     }
   }
-  .header {
-    background-position: -8% 50%, 842% 100%;
-    background-size: 0%, 95%;
-  }
+  // .header {
+  //   background-position: -8% 50%, 842% 100%;
+  //   background-size: 0%, 95%;
+  // }
   .body-page {
-    background: url(/img/footer-page-img-1920.png);
+    background: url(../../img/footer-page-img-1920.png);
     background-position: 61.5% 100%;
     background-repeat: no-repeat;
     background-size: 180%;
@@ -24,12 +24,7 @@
 .page {
 padding-top: 145px;
 }
-.cover {
-  min-height: 115vh;
-  &__content {
-    margin-top: 0;
-  }
-}
+
 
 .programs {
   &-header {
