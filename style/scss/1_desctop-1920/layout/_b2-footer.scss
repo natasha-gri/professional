@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: $bg-green;
-  background: url('/img/footer-left.svg'), url('/img/footer-right.svg');
+  background: url('../../img/footer-left.svg'), url('../../img/footer-right.svg');
   background-position: -15% 104%, 107% 100%;
   background-repeat: no-repeat;
   background-size: 45%, 60%;
@@ -31,7 +31,7 @@
 
     &:before {
       position: absolute;
-      content: url('/img/diamonds-left.svg');
+      content: url('../../img/diamonds-left.svg');
       top: 2px;
       left: -60px;
       z-index: -10;
@@ -39,7 +39,7 @@
 
     &:after {
       position: absolute;
-      content: url('/img/diamonds-right.svg');
+      content: url('../../img/diamonds-right.svg');
       bottom: 2px;
       right: -60px;
       z-index: -10;

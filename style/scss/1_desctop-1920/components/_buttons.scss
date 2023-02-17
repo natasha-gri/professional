@@ -1,6 +1,6 @@
 .btn-cover {
   @extend .second-font;
-  font-size: 1.6em; //26
+  font-size: 1.2em; //26
   font-weight: 200;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -8,7 +8,7 @@
   background-color: $btn;
   border: none;
   border-radius: 3px;
-  padding: 15px 48px 15px 48px;
+  padding: 11px 48px 10px 48px;
 
   &:hover {
     background-color: lighten($btn, 5%);
