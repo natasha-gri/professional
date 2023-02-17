@@ -1,19 +1,19 @@
 @media (max-width: 768px) {
   .footer {
-    background: url(/img/footer-mobile.svg);
+    background: url(../../img/footer-mobile.svg);
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 100%;
 
     &-wrap {
       &:before {
-        content: url('/img/diamonds-left-mob.svg');
+        content: url('../../img/diamonds-left-mob.svg');
         top: 161px;
         left: -17px;
       }
 
       &:after {
-        content: url('/img/diamonds-right-mob.svg');
+        content: url('../../img/diamonds-right-mob.svg');
         bottom: 179px;
         right: 10px;
       }
